@@ -56,7 +56,7 @@ echo
 echo "$SEPARATOR"
 echo "FIREWALL UFW"
 echo "$SEPARATOR"
-if command -v ufw > /dev/null 2>$1; then
+if command -v ufw > /dev/null 2>&1; then
 	sudo ufw status verbose
 else
 	echo "UFW no esta instalado."
