@@ -9,8 +9,9 @@ id_ecdsa
 .env
 .env.*
 
-* Archivos temporales y respaldos
+# Archivos temporales y respaldos
 *.tmp
 *.swp
 *~
 .DS_Store
+id_lab*
