@@ -29,7 +29,7 @@ Proyecto práctico de administración de sistemas Linux orientado a la configura
 - [x] Autenticación mediante clave pública.
 - [x] Inventario inicial de red.
 - [ ] Administración de usuarios y permisos.
-- [ ] Endurecimiento de SSH.
+- [x] Endurecimiento de SSH.
 - [x] Firewall y servidor web.
 - [ ] Monitorización y auditoría.
 - [ ] Reporte automatizado.
@@ -37,11 +37,11 @@ Proyecto práctico de administración de sistemas Linux orientado a la configura
 
 ## Documentación
 
-- [Instalación y resolución de problemas] (docs/00-instalacion.md)
-- [Inventario inicial] (docs/01-inventario.md)
-- [Firewall y SSH] (docs/02-firewall-ssh.md)
-- [Despliegue y acceso web con Nginx] (docs/03-nginx-acceso-web.md)
-- [Diagnóstico de Nginx y recursos HTTP] (docs/04-diagnostico-nginx.md)
+- [Instalación y resolución de problemas](docs/00-instalacion.md)
+- [Inventario inicial](docs/01-inventario.md)
+- [Firewall y SSH](docs/02-firewall-ssh.md)
+- [Despliegue y acceso web con Nginx](docs/03-nginx-acceso-web.md)
+- [Diagnóstico de Nginx y recursos HTTP](docs/04-diagnostico-nginx.md)
 
 ## Principios de trabajo
 
