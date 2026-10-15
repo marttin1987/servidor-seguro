@@ -1,0 +1,16 @@
+# Claves privadas y credenciales 
+*.pem
+*.key
+id_rsa
+id_ed25519
+id_ecdsa
+*.p12
+*.pfx
+.env
+.env.*
+
+* Archivos temporales y respaldos
+*.tmp
+*.swp
+*~
+.DS_Store
