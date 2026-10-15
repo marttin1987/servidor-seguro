@@ -31,7 +31,7 @@ Proyecto práctico de administración de sistemas Linux orientado a la configura
 - [ ] Administración de usuarios y permisos.
 - [x] Endurecimiento de SSH.
 - [x] Firewall y servidor web.
-- [ ] Monitorización y auditoría.
+- [x] Monitorización y auditoría.
 - [ ] Reporte automatizado.
 - [ ] Backups y prueba de restauración.
 
@@ -42,6 +42,8 @@ Proyecto práctico de administración de sistemas Linux orientado a la configura
 - [Firewall y SSH](docs/02-firewall-ssh.md)
 - [Despliegue y acceso web con Nginx](docs/03-nginx-acceso-web.md)
 - [Diagnóstico de Nginx y recursos HTTP](docs/04-diagnostico-nginx.md)
+- [Auditoria Lynis](docs/05-auditoria-lynis.md)
+- [Hardening ssh)(docs/06-hardening-ssh.md)
 
 ## Principios de trabajo
 

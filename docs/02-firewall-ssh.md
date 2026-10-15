@@ -50,7 +50,7 @@ La prueba de `sudo -n true` indicó que sudo requiere autenticación interactiva
 - Passwordauthentication no
 - Kbdinteractiveauthentication no
 - Allowusers martinc
-- X11forwarding yes 
+- X11Forwarding no
 - LoginGraceTime 30
 
 ## Protección SSH con Fail2ban
