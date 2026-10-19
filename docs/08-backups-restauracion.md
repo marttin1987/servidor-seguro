@@ -90,11 +90,11 @@ Antes de dejar el horario definitivo, se probó con una ejecución cada 3 minuto
 
 ## Limitaciones
 
-- Las copias están en el mismo disco que el servidor. Si el disco se pierde, se pierden también. Un esquema completo suma una copia fuera de la máquina.
+- Las copias están en el mismo disco que el servidor. Si el disco se pierde, se pierden también. Se atiende en el doc 11, que trae la última copia al anfitrión.
 - Solo se respaldan configuraciones, no el contenido web ni datos de usuarios.
 - La primera ejecución programada se confirma revisando `/var/log/atlas-cron.log` al día siguiente.
 
 ## Próximos pasos
 
-- Copiar los backups a otra ubicación, por ejemplo al anfitrión con `scp` o `rsync`.
+- Cifrar las copias y llevarlas a otra máquina (ver doc 11).
 - Agregar el estado del último backup al reporte con semáforo.
