@@ -47,6 +47,7 @@ Proyecto práctico de administración de sistemas Linux orientado a la configura
 - [Mejoras a partir de Lynis](docs/07-mejoras-lynis.md)
 - [Backups y restauracion](docs/08-backups-restauracion.md)
 - [Usuarios y permisos](docs/09-usuarios-permisos.md)
+- [HTTPS en Nginx](docs/10-https-nginx.md)
 
 ## Principios de trabajo
 
