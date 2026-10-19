@@ -9,7 +9,7 @@ Proyecto práctico de administración de sistemas Linux orientado a la configura
 - Anfitrión: Ubuntu
 - Virtualización: VirtualBox
 - Servidor: Debian
-- Administración remota: autenticacion mediante clave publica configurada; endurecimiento adicional pendiente.
+- Administración remota: autenticacion mediante clave publica configurada; SSH endurecido.
 - Red inicial: NAT con redirección de puertos
 
 ## Objetivos de aprendizaje
@@ -32,7 +32,7 @@ Proyecto práctico de administración de sistemas Linux orientado a la configura
 - [x] Endurecimiento de SSH.
 - [x] Firewall y servidor web.
 - [x] Monitorización y auditoría.
-- [ ] Reporte automatizado.
+- [x] Reporte automatizado.
 - [ ] Backups y prueba de restauración.
 
 ## Documentación
