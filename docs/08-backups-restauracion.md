@@ -16,6 +16,7 @@ Tener copias automáticas y verificables de las configuraciones críticas del se
 | `/etc/modprobe.d` | Módulos desactivados |
 | `/etc/login.defs` | Política de cuentas |
 | `/etc/issue`, `/etc/issue.net` | Aviso legal |
+| `/etc/ssl/certs/servidor-seguro.crt` y `/etc/ssl/private/servidor-seguro.key` | Certificado y clave de HTTPS (doc 10) |
 
 ## Diseño
 
@@ -50,7 +51,7 @@ Primer backup:
 sudo ~/respaldar-configs.sh; echo "rc=$?"
 ```
 
-Resultado: 9 rutas preparadas, backup creado, `rc=0`.
+Resultado: 9 rutas preparadas (11 al sumar el certificado y la clave de HTTPS), backup creado, `rc=0`.
 
 Verificación de la firma:
 
