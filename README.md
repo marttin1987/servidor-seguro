@@ -43,7 +43,8 @@ Proyecto práctico de administración de sistemas Linux orientado a la configura
 - [Despliegue y acceso web con Nginx](docs/03-nginx-acceso-web.md)
 - [Diagnóstico de Nginx y recursos HTTP](docs/04-diagnostico-nginx.md)
 - [Auditoria Lynis](docs/05-auditoria-lynis.md)
-- [Hardening ssh)(docs/06-hardening-ssh.md)
+- [Endurecimiento de SSH](docs/06-hardening-ssh.md)
+- [Mejoras a partir de Lynis](docs/07-mejoras-lynis.md)
 
 ## Principios de trabajo
 
