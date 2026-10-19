@@ -51,6 +51,7 @@ Proyecto práctico de administración de sistemas Linux orientado a la configura
 - [Usuarios y permisos](docs/09-usuarios-permisos.md)
 - [HTTPS en Nginx](docs/10-https-nginx.md)
 - [Backups fuera de la VM](docs/11-backups-fuera-de-la-vm.md)
+- [Scripts de root seguros](docs/12-scripts-de-root-seguros.md)
 
 ## Principios de trabajo
 

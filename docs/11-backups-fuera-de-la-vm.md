@@ -54,7 +54,6 @@ Códigos de salida de `traer-backups.sh`: `0` correcto, `1` firma que no coincid
 ## Próximos pasos
 
 - Cifrar las copias antes de sacarlas de la VM, por ejemplo con GPG.
-- Instalar también `respaldar-configs.sh` en `/usr/local/sbin`: hoy cron lo ejecuta como root desde la carpeta de `martinc`, con el mismo riesgo que se corrigió acá.
 - Agregar al reporte con semáforo la revisión de `/var/log/atlas-export.log`.
 
 ## Aprendizajes
