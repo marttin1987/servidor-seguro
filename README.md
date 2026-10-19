@@ -33,7 +33,7 @@ Proyecto práctico de administración de sistemas Linux orientado a la configura
 - [x] Firewall y servidor web.
 - [x] Monitorización y auditoría.
 - [x] Reporte automatizado.
-- [ ] Backups y prueba de restauración.
+- [x] Backups y prueba de restauración.
 
 ## Documentación
 
