@@ -14,7 +14,7 @@
 set -u
 
 PREPARACION="/var/backups/atlas/origen/config-servidor"
-RUTAS="/etc/ssh /etc/nginx /etc/fail2ban /etc/ufw /etc/sysctl.d /etc/modprobe.d /etc/login.defs /etc/issue /etc/issue.net"
+RUTAS="/etc/ssh /etc/nginx /etc/fail2ban /etc/ufw /etc/sysctl.d /etc/modprobe.d /etc/login.defs /etc/issue /etc/issue.net /etc/ssl/certs/servidor-seguro.crt /etc/ssl/private/servidor-seguro.key"
 
 if [ "$(id -u)" -ne 0 ]; then
 	echo "ERROR: ejecutar con sudo." >&2
