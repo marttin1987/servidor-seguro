@@ -45,6 +45,7 @@ Proyecto práctico de administración de sistemas Linux orientado a la configura
 - [Auditoria Lynis](docs/05-auditoria-lynis.md)
 - [Endurecimiento de SSH](docs/06-hardening-ssh.md)
 - [Mejoras a partir de Lynis](docs/07-mejoras-lynis.md)
+- [Backups y restauracion](docs/08-backups-restauracion.md)
 
 ## Principios de trabajo
 
