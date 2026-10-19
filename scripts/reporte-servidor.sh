@@ -18,6 +18,8 @@ UMBRAL_DISCO_AVISO=80
 UMBRAL_DISCO_CRITICO=90
 UMBRAL_MEMORIA_LIBRE=10
 SERVICIOS_CRITICOS="ssh nginx fail2ban ufw auditd"
+DIR_BACKUPS="${DIR_BACKUPS:-/var/backups/atlas/copias}"
+MAX_HORAS_BACKUP=26
 
 AVISOS=0
 FALLOS=0
@@ -151,6 +153,23 @@ if [ -f /var/run/reboot-required ]; then
 	aviso "El sistema necesita reiniciarse"
 else
 	ok "No hace falta reiniciar"
+fi
+
+seccion "BACKUPS"
+if [ "$(id -u)" -ne 0 ]; then
+	aviso "Sin privilegios: se omite la revision de backups (ejecutar con sudo)"
+else
+	ULTIMO=$(find "$DIR_BACKUPS" -maxdepth 1 -name '*.tar.gz' -printf '%T@\n' 2> /dev/null | sort -n | tail -n 1)
+	if [ -z "$ULTIMO" ]; then
+		fallo "No hay backups en $DIR_BACKUPS"
+	else
+		EDAD_HORAS=$((($(date +%s) - ${ULTIMO%%.*}) / 3600))
+		if [ "$EDAD_HORAS" -gt "$MAX_HORAS_BACKUP" ]; then
+			fallo "Ultimo backup hace ${EDAD_HORAS} h (maximo ${MAX_HORAS_BACKUP} h)"
+		else
+			ok "Ultimo backup hace ${EDAD_HORAS} h"
+		fi
+	fi
 fi
 
 seccion "RESUMEN"
