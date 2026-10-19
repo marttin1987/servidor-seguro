@@ -28,7 +28,7 @@ Proyecto práctico de administración de sistemas Linux orientado a la configura
 - [x] Conexión SSH desde el anfitrión al servidor.
 - [x] Autenticación mediante clave pública.
 - [x] Inventario inicial de red.
-- [ ] Administración de usuarios y permisos.
+- [x] Administración de usuarios y permisos.
 - [x] Endurecimiento de SSH.
 - [x] Firewall y servidor web.
 - [x] Monitorización y auditoría.
@@ -46,6 +46,7 @@ Proyecto práctico de administración de sistemas Linux orientado a la configura
 - [Endurecimiento de SSH](docs/06-hardening-ssh.md)
 - [Mejoras a partir de Lynis](docs/07-mejoras-lynis.md)
 - [Backups y restauracion](docs/08-backups-restauracion.md)
+- [Usuarios y permisos](docs/09-usuarios-permisos.md)
 
 ## Principios de trabajo
 
