@@ -1,5 +1,7 @@
 # Laboratorio de Servidor Linux Seguro
 
+[![ShellCheck](https://github.com/marttin1987/servidor-seguro/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/marttin1987/servidor-seguro/actions/workflows/shellcheck.yml)
+
 ## Descripción
 
 Proyecto práctico de administración de sistemas Linux orientado a la configuración, protección, monitorización y mantenimiento de un servidor Debian.
