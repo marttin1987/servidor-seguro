@@ -51,5 +51,4 @@ El acceso por SSH queda bloqueado porque `AllowUsers martinc` (doc 06) solo admi
 
 ## Próximos pasos
 
-- Permitir al auditor un único comando de solo lectura con una regla en `/etc/sudoers.d/`, validada con `visudo -c`.
 - Agregar al reporte con semáforo una revisión de cuentas con contraseña vencida o sin contraseña.

@@ -36,7 +36,7 @@ La VM usa red NAT de VirtualBox con redirección de puertos: `2222` a SSH, `8080
 | Red | Firewall UFW, módulos de red y almacenamiento desactivados, parámetros del kernel | [02](docs/02-firewall-ssh.md), [07](docs/07-mejoras-lynis.md) |
 | Web | Nginx con HTTPS y redirección desde HTTP | [03](docs/03-nginx-acceso-web.md), [10](docs/10-https-nginx.md) |
 | Auditoría | Lynis antes y después de las mejoras, `auditd`, actualizaciones automáticas | [05](docs/05-auditoria-lynis.md), [07](docs/07-mejoras-lynis.md) |
-| Usuarios | Política de contraseñas, usuario `auditor` con mínimo privilegio | [09](docs/09-usuarios-permisos.md) |
+| Usuarios | Política de contraseñas, usuario `auditor` con mínimo privilegio | [09](docs/09-usuarios-permisos.md), [13](docs/13-sudoers-minimo.md) |
 | Backups | Compresión atómica, firma SHA-256, rotación, prueba de restauración, copia fuera de la VM | [08](docs/08-backups-restauracion.md), [11](docs/11-backups-fuera-de-la-vm.md) |
 | Automatización | Reporte con semáforo y tareas de `cron` ejecutadas solo desde rutas de root | [12](docs/12-scripts-de-root-seguros.md) |
 
@@ -66,7 +66,7 @@ Todos pasan ShellCheck en cada `push`. Los backups usan el proyecto [backups-rot
 - No se cambió el puerto SSH: con red NAT no aporta protección real.
 - No se puso contraseña a GRUB: es una VM de laboratorio sin acceso físico.
 - No se instalaron módulos de Apache: el servidor web es Nginx.
-- El usuario `auditor` lee registros pero no tiene `sudo` ni acceso por SSH.
+- El usuario `auditor` lee registros y solo puede ejecutar con `sudo` el reporte de estado; no tiene acceso por SSH.
 - Root solo ejecuta scripts que están en carpetas de root.
 
 ## Limitaciones
@@ -80,7 +80,7 @@ Todos pasan ShellCheck en cada `push`. Los backups usan el proyecto [backups-rot
 
 ```text
 configs/   configuración aplicada al servidor
-docs/      un documento por etapa, del 00 al 12
+docs/      un documento por etapa, del 00 al 13
 scripts/   herramientas en Bash
 ```
 
@@ -99,6 +99,7 @@ scripts/   herramientas en Bash
 - [HTTPS en Nginx](docs/10-https-nginx.md)
 - [Backups fuera de la VM](docs/11-backups-fuera-de-la-vm.md)
 - [Scripts de root seguros](docs/12-scripts-de-root-seguros.md)
+- [Regla de sudoers mínima](docs/13-sudoers-minimo.md)
 
 ## Principios de trabajo
 
