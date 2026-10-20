@@ -105,3 +105,7 @@ scripts/   herramientas en Bash
 ## Principios de trabajo
 
 Cada etapa incluye explicación técnica, configuración, pruebas y documentación de los resultados reales. No se publican claves privadas, contraseñas ni otros secretos.
+
+## Licencia
+
+Licencia MIT. Ver el archivo [LICENSE](LICENSE).
