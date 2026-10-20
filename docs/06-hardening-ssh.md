@@ -105,7 +105,7 @@ Un comando de diagnóstico con `| tail` retenía la salida hasta que terminaba l
 
 ## Consideración con fail2ban y NAT
 
-Con la red NAT de VirtualBox, todas las conexiones del anfitrión llegan al servidor desde la misma dirección (`10.0.2.2`). Si fail2ban la bloquea, queda bloqueado todo el acceso. En un laboratorio con NAT conviene agregar la dirección a la lista de exclusión (`ignoreip`) de la configuración de fail2ban.
+Con la red NAT de VirtualBox, todas las conexiones del anfitrión llegan al servidor desde la misma dirección (`10.0.2.2`). Si fail2ban la bloquea, queda bloqueado todo el acceso. En un laboratorio con NAT conviene agregar la dirección a la lista de exclusión (`ignoreip`) de la configuración de fail2ban (ver doc 14).
 
 ## Reversión
 
@@ -119,6 +119,5 @@ sudo systemctl reload ssh
 ## Próximos pasos
 
 - Volver a ejecutar Lynis y comparar con el índice inicial de 68.
-- Agregar `ignoreip` en la configuración de fail2ban.
 - Incorporar la verificación de estas directivas al script de reporte.
 - Evaluar cambiar el puerto o restringir el acceso por origen cuando la red deje de ser NAT.

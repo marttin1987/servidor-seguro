@@ -32,7 +32,7 @@ La VM usa red NAT de VirtualBox con redirección de puertos: `2222` a SSH, `8080
 
 | Área | Medidas | Documento |
 | --- | --- | --- |
-| Acceso | Clave pública, sin contraseñas, sin root por SSH, `AllowUsers`, sin reenvíos, `fail2ban` | [06](docs/06-hardening-ssh.md) |
+| Acceso | Clave pública, sin contraseñas, sin root por SSH, `AllowUsers`, sin reenvíos, `fail2ban` | [06](docs/06-hardening-ssh.md), [14](docs/14-fail2ban-nat.md) |
 | Red | Firewall UFW, módulos de red y almacenamiento desactivados, parámetros del kernel | [02](docs/02-firewall-ssh.md), [07](docs/07-mejoras-lynis.md) |
 | Web | Nginx con HTTPS y redirección desde HTTP | [03](docs/03-nginx-acceso-web.md), [10](docs/10-https-nginx.md) |
 | Auditoría | Lynis antes y después de las mejoras, `auditd`, actualizaciones automáticas | [05](docs/05-auditoria-lynis.md), [07](docs/07-mejoras-lynis.md) |
@@ -80,7 +80,7 @@ Todos pasan ShellCheck en cada `push`. Los backups usan el proyecto [backups-rot
 
 ```text
 configs/   configuración aplicada al servidor
-docs/      un documento por etapa, del 00 al 13
+docs/      un documento por etapa, del 00 al 14
 scripts/   herramientas en Bash
 ```
 
@@ -100,6 +100,7 @@ scripts/   herramientas en Bash
 - [Backups fuera de la VM](docs/11-backups-fuera-de-la-vm.md)
 - [Scripts de root seguros](docs/12-scripts-de-root-seguros.md)
 - [Regla de sudoers mínima](docs/13-sudoers-minimo.md)
+- [fail2ban y la red NAT](docs/14-fail2ban-nat.md)
 
 ## Principios de trabajo
 
